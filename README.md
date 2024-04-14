@@ -1,10 +1,8 @@
 # FLAG QUIZ GAME
 
-(suoritan kurssia suomeksi mutta dokumentaatio on englanniksi)
+current ver **0.2.8** (_14.4.2024_), **latest release of the software source code** can be found [here](https://github.com/joonarafael/ohte/releases "Flag Game Releases").
 
-current ver **0.2.7** (*12.5.2023*), **latest release of the software source code** can be found [here](https://github.com/joonarafael/ohte/releases).
-
-This is a **Flag Quiz Game** including all 195 *fully recognized independent states* listed at [state.gov](https://www.state.gov/independent-states-in-the-world/), and *Taiwan*, *Kosovo* & *Western Sahara*. The game has 5 different game modes; *Classic*, *Advanced*, *Time Trial*, *One Life*, and *Free Mode*. See the [rulebook](./flaggame/src/logs/gamerules.txt) for details. The software also records *all user activity* and *played games*! Player may look previous games and study their **own lifelong statistics**, such as *total playtime* or *average streak length*!
+This is a **Flag Quiz Game** including all 195 _fully recognized independent states_ listed at [state.gov](https://www.state.gov/independent-states-in-the-world/ "List of independent states at state.gov"), and _Taiwan_, _Kosovo_ & _Western Sahara_. The game has 5 different game modes; _Classic_, _Advanced_, _Time Trial_, _One Life_, and _Free Mode_. See the [rulebook](./flaggame/src/logs/gamerules.txt "Open Rule Book") for details. The software also records _all user activity_ and _played games_! Player may look previous games and study their **own lifelong statistics**, such as _total playtime_ or _average streak length_!
 
 ## DOCUMENTATION
 
@@ -20,57 +18,7 @@ This is a **Flag Quiz Game** including all 195 *fully recognized independent sta
 
 ## VERSIONS
 
-**Software has not been tested in a MacOS environment**. Flag Quiz Game has been built with **Python 3.10** and **Poetry 1.4.0**. Software might not run on other versions. This installation guide [provides some possible solutions](./README.md#troubleshooting-some-possible-poetry-errors) for two common errors encountered with other Poetry versions. A solution for the SQLite error: `database is locked`, is also provied [down below](./README.md#software-test-coverage-report).
-
-## INSTALLATION GUIDE
-
-### 1. Clone this Github repository to your local machine by executing:
-
-```bash
-git clone https://github.com/joonarafael/ohte.git
-```
-
-### 2. Navigate to `./flaggame`.
-
-This is the root folder for the Poetry project. Not the Github repository `ohte` (where this `README.md` file is located in).
-
-### 3. Resolve Poetry dependencies by executing:
-
-```bash
-poetry install
-```
-
-### TROUBLESHOOTING SOME POSSIBLE POETRY ERRORS
-
-- **PROBLEM A**: *The Poetry configuration is invalid: Additional properties are not allowed ('group' was unexpected)*
-
-  - **SOLUTION A**: This error occurs most likely due to mismatching Poetry editions. You can update your Poetry to 1.4.0 or alternatively manually edit the `pyproject.toml` at `./flaggame/pyproject.toml` by moving all developer dependencies to the "regular" group. You may also just remove them altogether if you don't need developer dependencies (e.g. pylint and pytest).
-
-    ```bash
-    nano pyproject.toml
-    ```
-
-- **PROBLEM B**: *The lock file is not compatible with the current version of Poetry. Upgrade Poetry to be able to read the lock file or, alternatively, regenerate the lock file with the poetry lock command.*
-
-  - **SOLUTION B**: Your Poetry installation is too old/new. The original lock file has been generated with Poetry version 1.4.0. You can try to match your Poetry version, but this issue can also be resolved by first removing `poetry.lock` file at `./flaggame/poetry.lock` entirely, and then regenerating it again by executing:
-
-    ```bash
-    rm -r poetry.lock
-    ```
-
-    ```bash
-    poetry lock --no-update
-    ```
-
-    This command regenerates the `poetry.lock` file for your system, compatible with your Poetry version, without changing the actual dependencies and their corresponding versions within the `pyproject.toml`.
-
-### 4. Run the game in Poetry project master folder `./flaggame` by executing:
-
-```bash
-poetry run invoke start
-```
-
-Make sure to familiarize yourself with the [User Manual](./documentation/user_manual.md) and read the [rulebook](./flaggame/src/logs/gamerules.txt) to find details about all the different game modes!
+**Software has not been tested in a MacOS or Windows environment**. Flag Quiz Game has been built with **Python 3.10**. Software might not run on other versions. You can find the installation manual [here](./documentation/user_manual.md "User Manual")
 
 ## SOFTWARE TESTING WITH PYTEST
 
