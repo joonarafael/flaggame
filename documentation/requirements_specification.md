@@ -1,4 +1,4 @@
-# Software Requirements Specification
+# SOFTWARE REQUIREMENTS SPECIFICATION
 
 ## Main Goal & Usage
 
@@ -6,7 +6,7 @@ The Software is a casual one-player flag quiz game. It is intended to include ev
 
 ## Software Core Functionality & Interface
 
-- [x] Main langauge: Python.
+- [x] Main language: Python.
 - [x] Utilize the Tkinter library for graphics.
 - [x] Keep track of high scores and previous games in a separate history file stored on disk.
 - [x] Game should be played with mouse pointer.
@@ -19,9 +19,9 @@ After the main functionalities and the core application is up and running, these
 
 - [x] Advanced Mode: Complex pointing system to give points for quick time and running streaks. Three lives.
 - [x] Free Mode: Unlimited lives & time to practice purposes
-- [x] Time Trial: Three lives with continious time pressure, game ends if time runs out
+- [x] Time Trial: Three lives with continuous time pressure, game ends if time runs out
 - [x] One Life: Just one life but unlimited time
-- [ ] Custom Mode: Player can determine the game settings self
+- [ ] Custom Mode: Player can determine the game settings themselves
 - [x] Player Lifetime Statistics: Keep track of lifetime statistics, amount of games, accuracy, etc. ...
 
 ## Custom Mode

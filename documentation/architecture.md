@@ -1,6 +1,6 @@
 # SOFTWARE ARCHITECTURE
 
-## GENERAL SOFTWARE LAYOUT
+## General Software Layout
 
 Software is split into 4 different main sections, or "tabs", if you will; _Game_, _Stats_, _History_, and _Rules_. Software also utilizes a main menu with 4 drop-down menus; _File_, _Stats_, _Debug_, and _About_. These menus include functions to navigate and control the software.
 
@@ -12,7 +12,7 @@ The game tabs are designed as follows:
 
 ### STATS
 
-**Stats tab includes the player lifelong statistics**. It's also responsible for the browsing of previously played games (view can be switched from the Stats drop-down menu). **Stats are automatically rewritten _always_ when a game is finished**.
+**Stats tab includes the player lifelong statistics**. It's also responsible for the browsing of previously played games (view can be switched from the Stats drop-down menu). **Stats are automatically recalculated _always_ when a game is finished**.
 
 ### HISTORY
 
@@ -20,15 +20,15 @@ The game tabs are designed as follows:
 
 ### RULES
 
-**The game rulebook is always visible in the Rules tab**. It has detailed information about every game mode.
+**The game rule book is always visible in the Rules tab**. It has detailed information about every game mode.
 
-_A comprehensive guide detailing the software usage can be found [here](./user_manual.md "User Manual")_.
+**NOTE!** _A comprehensive guide detailing the software usage can be found [here](./user_manual.md "User Manual")_.
 
-## SOFTWARE LAUNCH & USAGE
+## Software Launch & Usage
 
 Software launches straight away to the Game tab and **a new game can be immediately launched** from the File menu. Everything is visible straight away, _all menus and tabs can be seen at once_.
 
-## PLAYER PERSONAL HISTORY & LONG-TERM MEMORY
+## Player Personal History & Long-term Memory Applications
 
 **Software has long-term memory functionality** in the form of _software usage history_, _player activity_, and _player lifelong statistics_.
 
@@ -39,12 +39,6 @@ Software launches straight away to the Game tab and **a new game can be immediat
 ### STATISTICS
 
 **The player lifelong statistics is a more complex system utilizing more of a database structure for data handling**. The software stores all rounds and streaks data into two corresponding .csv files on disk. Additionally, the complete record listing all played games is its own .csv file. _The lifelong statistics are calculated based on the data fetched from these .csv files_.
-
-## SOFTWARE REPOSITORY STRUCTURE
-
-This chart details the repository structure of the software.
-
-<img src="./images/software_repository_structure.svg">
 
 ## GAME HISTORY WRITING & READING
 
@@ -111,7 +105,7 @@ sequenceDiagram
 
 ```
 
-# REMAINING ISSUES WITH SOURCE CODE QUALITY & SOFTWARE LOGIC
+## Remaining Issues With Source Code Quality & Software Logic
 
 There are some underlying issues still with the source code & game logic. While I think some areas of the software have been succesfully split into multiple Python modules and the responsibility has been divided in a good way (like the different [gui elements](../src/gui_elements/ "GUI source code")), there is a great deal of work to remain.
 

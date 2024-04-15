@@ -1,4 +1,4 @@
-# Flag Quiz Game Changelog
+# CHANGELOG
 
 ## 2023
 

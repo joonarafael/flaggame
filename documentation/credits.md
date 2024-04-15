@@ -1,4 +1,4 @@
-# Credits
+# CREDITS
 
 ## Code snippets & Algorithm Ideas
 

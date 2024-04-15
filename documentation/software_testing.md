@@ -1,4 +1,4 @@
-# Software Testing
+# SOFTWARE TESTING
 
 Basic software logic has been rigorously tested with automated testing and wider software functionality, including e.g. software installation and graphical user interface performance, has been manually checked.
 
@@ -30,7 +30,7 @@ The [CSVHandler](../src/tests/e_csvhandler_test.py "CSVHandler Test source code"
 
 ### RULES_TEST
 
-The [Rules](../src/tests/f_rules_test.py "Rules Test source code") test module performs a few tests assessing the logic reading the [rulebook](../src/logs/gamerules.txt "Open the Rule Book"). These tests include, for example, how the software acts if no rule book can be found, or if the rule book row count is not the expected (70).
+The [Rules](../src/tests/f_rules_test.py "Rules Test source code") test module performs a few tests assessing the logic reading the [rule book](../src/logs/gamerules.txt "Open the Rule Book"). These tests include, for example, how the software acts if no rule book can be found, or if the rule book row count is not the expected (70).
 
 ## Test Coverage
 

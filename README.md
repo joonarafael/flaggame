@@ -2,7 +2,7 @@
 
 current ver **0.2.8** (_14.4.2024_), **latest release of the software source code** can be found [here](https://github.com/joonarafael/ohte/releases "Flag Game Releases").
 
-This is a **Flag Quiz Game** including all 195 _fully recognized independent states_ listed at [state.gov](https://www.state.gov/independent-states-in-the-world/ "List of independent states at state.gov"), and _Taiwan_, _Kosovo_ & _Western Sahara_. The game has 5 different game modes; _Classic_, _Advanced_, _Time Trial_, _One Life_, and _Free Mode_. See the [rulebook](./flaggame/src/logs/gamerules.txt "Open Rule Book") for details. The software also records _all user activity_ and _played games_! Player may look previous games and study their **own lifelong statistics**, such as _total playtime_ or _average streak length_!
+This is a **Flag Quiz Game** including all 195 _fully recognized independent states_ listed at [state.gov](https://www.state.gov/independent-states-in-the-world/ "List of independent states at state.gov"), and _Taiwan_, _Kosovo_ & _Western Sahara_. The game has 5 different game modes; _Classic_, _Advanced_, _Time Trial_, _One Life_, and _Free Mode_. See the [Rule Book](./flaggame/src/logs/gamerules.txt "Open Rule Book") for details. The software also records _all user activity_ and _played games_! Player may look previous games and study their **own lifelong statistics**, such as _total playtime_ or _average streak length_!
 
 ## DOCUMENTATION
 
@@ -16,9 +16,11 @@ This is a **Flag Quiz Game** including all 195 _fully recognized independent sta
 
 - [Software Testing Document](./documentation/software_testing.md)
 
-## VERSIONS
+## VERSIONS & TECHNICAL DETAILS
 
-**Software has not been tested in a MacOS or Windows environment**. Flag Quiz Game has been built with **Python 3.10**. Software might not run on other versions. You can find the installation manual [here](./documentation/user_manual.md "User Manual")
+**Software has not been tested in a MacOS or Windows environment**. Flag Quiz Game has been built with **Python 3.10**. Software might not run on other versions. You can find the installation manual [here](./documentation/user_manual.md "User Manual").
+
+The software launching and testing etc. are automated with _bash_ scripts. For non-Linux OS users, more technical know-how is required to get the game going.
 
 ## SOFTWARE TESTING WITH PYTEST
 
@@ -48,4 +50,4 @@ To run the automated code review algorithm with parameters defined in [pylintrc]
 ./pylint.sh
 ```
 
-To read my personal notes about pylint results and other comments regarding software source code quality, see [Software Architecture](./documentation/architecture.md#remaining-issues-with-source-code-quality--software-logic "Read more about Remaining Quality Concerns").
+To read my personal notes about pylint results and other comments regarding software source code quality, check [this document](./documentation/architecture.md#remaining-issues-with-source-code-quality--software-logic "Software Architecture").

@@ -2,37 +2,41 @@
 
 Complete user manual for software usage. Updated April 14th 2024 (ver 0.2.7). Latest release of the software source code can be found [here](https://github.com/joonarafael/ohte/releases "Flag Game Releases").
 
-## INSTALLATION
+## Installation
 
-### 1. Clone this Github repository to your local machine by executing:
+This manual will guide you through the installation procedure for Linux systems. Users of other operating systems may need to perform some creative problem solving to get the software up and running. Generally speaking, Python 3.10 and relevant dependencies (_Tkinter_ and _Pillow_) should do the job.
+
+1. Clone this Github repository to your local machine by executing:
 
 ```bash
 git clone https://github.com/joonarafael/ohte.git
 ```
 
-### 2. Give execution rights to the dependency installation script with
+You may also get the source code as a ZIP folder from the [releases page](https://github.com/joonarafael/flaggame/releases "Flag Game Releases").
+
+2. After entering the directory with `cd flaggame`, give execution rights to the dependency installation script with
 
 ```bash
 chmod u+x ./setup.sh
 ```
 
-### 3. Resolve dependencies by executing:
+3. Resolve dependencies by executing:
 
 ```bash
 ./setup.sh
 ```
 
-### 4. Run the game by executing:
+4. Run the game by executing:
 
 ```bash
 ./run.sh
 ```
 
-## CONTROLS
+## Controls
 
 **Everything is controlled with the mouse cursor**. No keyboard input required at all.
 
-## GRAPHICAL USER INTERFACE & SOFTWARE NAVIGATION
+## Graphical User Interface & Software Navigation
 
 <img src="./images/um_launch.png">
 
@@ -70,7 +74,7 @@ The game window is split into **4 different tabs**:
 
 #### **New Game...**
 
-Start a new game by selecting the game mode. Game modes include _Classic_, _Advanced_, _Time Trial_, _One Life_, and _Free Mode_ (See [rulebook](../flaggame/src/logs/gamerules.txt "Open Rule Book") for details). Every game start is recorded to history. Game will be recorded and calculated into statistics if more than one round is played (excluding Time Trial, which is recorded anyways).
+Start a new game by selecting the game mode. Game modes include _Classic_, _Advanced_, _Time Trial_, _One Life_, and _Free Mode_ (See [rule book](../flaggame/src/logs/gamerules.txt "Open Rule Book") for details). Every game start is recorded to history. Game will be recorded and calculated into statistics if more than one round is played (excluding Time Trial, which is recorded anyways).
 
 #### **Cancel Game**
 
@@ -108,7 +112,7 @@ Option to force the _statistic refresh sequence_ (mainly for debugging purposes)
 
 #### **Ignore / Include Free Mode Games**
 
-Select whether to include the Free Mode games in the statistics calculations or not. **Current preference is indicated in the title of the content (tab first row)**:
+Select whether to include the Free Mode games in the statistics calculations or not. **Current preference is indicated in the title of the content (first row)**:
 
 <img src="./images/um_ignore_free.png">
 
