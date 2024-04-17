@@ -1,5 +1,7 @@
 # FLAG QUIZ GAME
 
+![main workflow](https://github.com/joonarafael/flaggame/actions/workflows/main.yml/badge.svg) [![codecov](https://codecov.io/gh/joonarafael/flaggame/graph/badge.svg?token=XCLKOTSKCW)](https://codecov.io/gh/joonarafael/flaggame)
+
 current ver **0.2.8** (_14.4.2024_), **latest release of the software source code** can be found [here](https://github.com/joonarafael/ohte/releases "Flag Game Releases").
 
 This is a **Flag Quiz Game** including all 195 _fully recognized independent states_ listed at [state.gov](https://www.state.gov/independent-states-in-the-world/ "List of independent states at state.gov"), and _Taiwan_, _Kosovo_ & _Western Sahara_. The game has 5 different game modes; _Classic_, _Advanced_, _Time Trial_, _One Life_, and _Free Mode_. See the [Rule Book](./flaggame/src/logs/gamerules.txt "Open Rule Book") for details. The software also records _all user activity_ and _played games_! Player may look previous games and study their **own lifelong statistics**, such as _total playtime_ or _average streak length_!
