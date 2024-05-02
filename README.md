@@ -1,3 +1,5 @@
+This repository is a new **cleaned** clone of the original course repository. Only the final project (e.g. the flag game) is left. All course exercises and other unnecessary stuff is removed.
+
 # FLAG QUIZ GAME
 
 ![main workflow](https://github.com/joonarafael/flaggame/actions/workflows/main.yml/badge.svg) [![codecov](https://codecov.io/gh/joonarafael/flaggame/graph/badge.svg?token=XCLKOTSKCW)](https://codecov.io/gh/joonarafael/flaggame)
